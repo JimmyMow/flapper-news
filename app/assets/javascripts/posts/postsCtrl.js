@@ -4,6 +4,7 @@ angular.module('flapperNews')
 'posts',
 'post',
 function($scope, posts, post) {
+  console.log("post: ", post);
   $scope.post = post;
 
   $scope.addComment = function() {

@@ -24,6 +24,16 @@ function($stateProvider, $urlRouterProvider) {
       templateUrl: 'posts/_posts.html',
       controller: 'PostsCtrl'
     })
+    .state('users', {
+      resolve: {
+        user: ['$stateParams', 'users', function($stateParams, users) {
+          return users.get($stateParams.id);
+        }]
+      },
+      url: '/users/{id}',
+      templateUrl: 'users/_user.html',
+      controller: 'UsersCtrl'
+    })
     .state('login', {
       url: '/login',
       templateUrl: 'auth/_login.html',
