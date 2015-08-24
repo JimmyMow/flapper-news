@@ -1,0 +1,21 @@
+{
+  "name": "flapper-news",
+  "version": "0.0.0",
+  "authors": [
+    "Jack Mallers <jimmymowschess@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AngularDevise": "angular-devise#~1.1.0",
+    "angular": "~1.4.4",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5"
+  }
+}
